@@ -1,0 +1,77 @@
+/* GENERAL CONFIGURATIONS */
+:root {
+  --color-white: hsl(0, 0%, 100%);
+  --color-light-gray: hsl(212, 45%, 89%);
+  --color-grayish-blue: hsl(220, 15%, 55%);
+  --color-dark-blue: hsl(218, 44%, 22%);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--color-light-gray);
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.5rem;
+}
+
+/* MAIN */
+.c-container {
+  align-items: center;
+  background-color: var(--color-white);
+  border-radius: 1.7rem;
+  box-shadow: 0 1px 2rem hsla(219, 15%, 55%, 0.15);
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  padding: 1.6rem 1.6rem 4rem 1.6rem;
+  text-align: center;
+  width: 32rem;
+}
+
+.c-image {
+  border-radius: 1.1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.c-title {
+  color: var(--color-dark-blue);
+  font-size: 2.2rem;
+}
+
+.c-description {
+  color: var(--color-grayish-blue);
+  padding-inline: 1.2rem;
+}
+
+/* FOOTER */
+.f-attribution {
+  bottom: 1rem;
+  color: var(--color-grayish-blue);
+  font-size: 1rem;
+  left: 0;
+  position: absolute;
+  right: 0;
+  text-align: center;
+}
+
+.f-attribution a {
+  color: var(--color-grayish-blue);
+  text-decoration: none;
+}
+
+.f-attribution a:hover {
+  color: var(--color-dark-blue);
+  text-decoration: underline;
+}
